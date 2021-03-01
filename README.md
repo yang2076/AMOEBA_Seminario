@@ -64,40 +64,27 @@ index_of_molecule   atom_index  orderly_local_index   type_shortname   atom_clas
 (orderly_local_index : the atomic index in only one single molecule)
 
 e.g.
-  000    1    1         OW   13\n
-  000    2    2         HW   14\n
-  000    2    3         HW   14\n
-  001    3    1        C34   36\n
-  001    4    2         HC   20\n
-  001    4    3         HC   20\n
-  001    4    4         HC   20\n
-  001    4    5         HC   20\n
-  002    5    1       N3H3  139\n
-  002    6    2         HN   22\n
-  002    6    3         HN   22\n
-  002    6    4         HN   22\n
-  003    7    1         N3  137\n
-  003    8    2         HN   22\n
-  003    8    3         HN   22\n
-  003    9    4        C33   35\n
-  003   10    5         HC   20\n
-  003   10    6         HC   20\n
-  003   10    7         HC   20\n
-  004   11    1         OH  170\n
-  004   12    2         HO   19\n
-  004   13    3        C33   35\n
-  004   14    4         HC   20\n
-  004   14    5         HC   20\n
-  004   14    6         HC   20\n
-  005   15    1        C33   35\n
-  005   16    2         HC   20\n
-  005   16    3         HC   20\n
-  005   16    4         HC   20\n
-  005   17    5        CON   88\n
-  005   18    6        O=C  178\n
-  005   19    7       NC=O  141\n
-  005   20    8         HN   22\n
-  005   21    9        C33   35\n
-  005   22   10         HC   20\n
-  005   22   11         HC   20\n
-  005   22   12         HC   20\n
+
+  000    1    1         OW   13
+
+  000    2    2         HW   14
+
+  000    2    3         HW   14
+
+  001    3    1        C34   36
+
+  001    4    2         HC   20
+
+  001    4    3         HC   20
+
+  001    4    4         HC   20
+
+  001    4    5         HC   20
+
+  002    5    1       N3H3  139
+
+  002    6    2         HN   22
+
+  002    6    3         HN   22
+
+  002    6    4         HN   22
