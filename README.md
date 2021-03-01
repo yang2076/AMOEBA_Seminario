@@ -28,7 +28,9 @@ Change scaling factor in dowork.py if necessary
 (The type file will be automatically printed out by operating dowork.py)
 
 (2). The main workflow:
-dowork.py -- molecule.py : read all the molecules in filelist_all.txt and the types in amoebaplus_type 
+dowork.py -- Get into the following operations:
+
+          -- molecule.py : read all the molecules in filelist_all.txt and the types in amoebaplus_type 
 
           -- coords_from_fchk.py : read necessary info. (atomic num, coordinates and hessian) from .fchk
           
