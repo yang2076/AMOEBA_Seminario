@@ -19,8 +19,8 @@ the parameters because AMOEBA+ is using MM3-style valence terms (up to quartic f
 subfolder. Please turn the opt=Tight and freq on. After calculation, please use formchk to generate .fchk file
 
 *** Make sure you have set the correct scaling factor for frequency calculated by different QM method and bsis set
-For MP2/6-31g*, the scaling factor is 0.943. (You can find the appropriate scaling factor in: https://cccbdb.nist.gov/vibscalejust.asp)
-change scaling factor in dowork.py if necessary
+For MP2/6-31g*, the scaling factor is 0.943. (You can find the appropriate scaling factor in: https://cccbdb.nist.gov/vibscalejust.asp, open in new screen).
+Change scaling factor in dowork.py if necessary
 
 [2]. Make a list of all the molecules in ./dir/filelist_all.txt
 [3]. You need to produce correct tinker .txyz file for each molecule in subfolder with atomic index in order you made in file list
