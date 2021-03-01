@@ -14,6 +14,7 @@ the parameters because AMOEBA+ is using MM3-style valence terms (up to quartic f
 # The workflow of the whole program
 
 (1). Some preparation needs to be done prior to using this program:
+
 [1]. Use Gaussian to calculate all the molecules in your database in folder ./dir with each molecule using one single
 subfolder. Please turn the opt=Tight and freq on. After calculation, please use formchk to generate .fchk file
 
@@ -45,53 +46,58 @@ format:
 
 [1]. Force constant for the bond:
 bond   atom_1  atom_2  k_b  RMSE  (unit: kcal/(mol\*A))
+
 [2]. Force constant for the angle:
 angle   atom_1  atom_2  atom_3  k_a  RMSE  (unit: kcal/(mol\*rad))
+
 [3]. Force constant for the bond:
 bond   atom_1  atom_2  length  RMSE  (unit: A)
+
 [4]. Force constant for the angle:
 angle   atom_1  atom_2  atom_3  angle  RMSE  (unit: deg)
+
 type.txt:
 the corresponding relation between atomic class
 format:
 index_of_molecule   atom_index  orderly_local_index   type_shortname   atom_class
 (atom_index : determined by tinker after combining those structrally equivalent atoms)
 (orderly_local_index : the atomic index in only one single molecule)
+
 e.g.
-  000    1    1         OW   13
-  000    2    2         HW   14
-  000    2    3         HW   14
-  001    3    1        C34   36
-  001    4    2         HC   20
-  001    4    3         HC   20
-  001    4    4         HC   20
-  001    4    5         HC   20
-  002    5    1       N3H3  139
-  002    6    2         HN   22
-  002    6    3         HN   22
-  002    6    4         HN   22
-  003    7    1         N3  137
-  003    8    2         HN   22
-  003    8    3         HN   22
-  003    9    4        C33   35
-  003   10    5         HC   20
-  003   10    6         HC   20
-  003   10    7         HC   20
-  004   11    1         OH  170
-  004   12    2         HO   19
-  004   13    3        C33   35
-  004   14    4         HC   20
-  004   14    5         HC   20
-  004   14    6         HC   20
-  005   15    1        C33   35
-  005   16    2         HC   20
-  005   16    3         HC   20
-  005   16    4         HC   20
-  005   17    5        CON   88
-  005   18    6        O=C  178
-  005   19    7       NC=O  141
-  005   20    8         HN   22
-  005   21    9        C33   35
-  005   22   10         HC   20
-  005   22   11         HC   20
-  005   22   12         HC   20
+  000    1    1         OW   13\n
+  000    2    2         HW   14\n
+  000    2    3         HW   14\n
+  001    3    1        C34   36\n
+  001    4    2         HC   20\n
+  001    4    3         HC   20\n
+  001    4    4         HC   20\n
+  001    4    5         HC   20\n
+  002    5    1       N3H3  139\n
+  002    6    2         HN   22\n
+  002    6    3         HN   22\n
+  002    6    4         HN   22\n
+  003    7    1         N3  137\n
+  003    8    2         HN   22\n
+  003    8    3         HN   22\n
+  003    9    4        C33   35\n
+  003   10    5         HC   20\n
+  003   10    6         HC   20\n
+  003   10    7         HC   20\n
+  004   11    1         OH  170\n
+  004   12    2         HO   19\n
+  004   13    3        C33   35\n
+  004   14    4         HC   20\n
+  004   14    5         HC   20\n
+  004   14    6         HC   20\n
+  005   15    1        C33   35\n
+  005   16    2         HC   20\n
+  005   16    3         HC   20\n
+  005   16    4         HC   20\n
+  005   17    5        CON   88\n
+  005   18    6        O=C  178\n
+  005   19    7       NC=O  141\n
+  005   20    8         HN   22\n
+  005   21    9        C33   35\n
+  005   22   10         HC   20\n
+  005   22   11         HC   20\n
+  005   22   12         HC   20\n
