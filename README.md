@@ -58,9 +58,13 @@ angle   atom_1  atom_2  atom_3  angle  RMSE  (unit: deg)
 
 type.txt:
 the corresponding relation between atomic class
+
 format:
+
 index_of_molecule   atom_index  orderly_local_index   type_shortname   atom_class
+
 (atom_index : determined by tinker after combining those structrally equivalent atoms)
+
 (orderly_local_index : the atomic index in only one single molecule)
 
 e.g.
