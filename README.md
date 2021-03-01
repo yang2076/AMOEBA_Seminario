@@ -42,6 +42,7 @@ In src:
 results.log:
 the results of the force constants and the average reference length and angle.
 format:
+
 [1]. Force constant for the bond:
 bond   atom_1  atom_2  k_b  RMSE  (unit: kcal/(mol*A))
 [2]. Force constant for the angle:
