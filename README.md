@@ -29,7 +29,7 @@ Change scaling factor in dowork.py if necessary
 
 (2). The main workflow:
 dowork.py -- molecule.py : read all the molecules in filelist_all.txt and the types in amoebaplus_type 
-          -- info_fchk.py : read necessary info. (atomic num, coordinates and hessian) from .fchk
+          -- coords_from_fchk.py : read necessary info. (atomic num, coordinates and hessian) from .fchk
           -- bond_angle_lists.py : read all the atomic indices forming the bonds and angles for each molecule, calculate the optimized bond length and angle degree
           -- force_constant.py : calculate the force constants
           -- analyze.py : collect all the results and do average
