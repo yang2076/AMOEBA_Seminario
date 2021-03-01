@@ -44,9 +44,9 @@ the results of the force constants and the average reference length and angle.
 format:
 
 [1]. Force constant for the bond:
-bond   atom_1  atom_2  k_b  RMSE  (unit: kcal/(mol*A))*
+bond   atom_1  atom_2  k_b  RMSE  (unit: kcal/(mol\*A))
 [2]. Force constant for the angle:
-angle   atom_1  atom_2  atom_3  k_a  RMSE  (unit: kcal/(mol*rad))*
+angle   atom_1  atom_2  atom_3  k_a  RMSE  (unit: kcal/(mol\*rad))
 [3]. Force constant for the bond:
 bond   atom_1  atom_2  length  RMSE  (unit: A)
 [4]. Force constant for the angle:
