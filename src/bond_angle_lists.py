@@ -23,10 +23,6 @@ class bond_angle:
     self.verbose = verbose
 
   def read_bond_angle(self):
-    # It will automatically get into each folder of the molecule to read the output .log to obtain the info. about
-    # all the bonds and angles (the indices of atom) existing inside the molecule, and the bond length and angle degree
-    # are calculated by using the optimized coordinates in .fchk.
-
     os.chdir(self.input)
 
     f_log = open(self.log)
@@ -34,14 +30,15 @@ class bond_angle:
     f_log.close()
 
     i = 0
+    j = 0
     for line in lines:
-      if(len(line) > 80 and line[:81] == ' ! Name  Definition              Value          Derivative Info.                !'):
+      if(j != 1 and len(line) > 80 and line[:81] == ' ! Name  Definition              Value          Derivative Info.                !'):
         i = 1
+        j = 1
         continue
 
       if(i == 1):
         terms = line.split()
-
         if(len(terms) > 6 and terms[1][0] == 'R' and terms[-1] == '!'):
           self.bond.append([int(terms[2].split(',')[0][2:]), int(terms[2].split(',')[1][:-1])])
           bond_AB = np.linalg.norm(self.fchk.coords[self.bond[-1][1]-1]-self.fchk.coords[self.bond[-1][0]-1])
@@ -65,6 +62,5 @@ class bond_angle:
           continue
         else:
           i = 0
-
     os.chdir(self.path)
 
