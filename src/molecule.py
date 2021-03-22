@@ -101,7 +101,7 @@ class molecules:
         myStr = data[0]
 
         global_index = data[1]
-        classNum = data[2]
+        classNum = int(data[2])
         className = data[3]
 
         # Decide if the atom class is automatically generated in order without any combination
